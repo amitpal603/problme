@@ -412,63 +412,71 @@
 // }
 
  //method 1
-const greek = (data,hey) => {
-      setTimeout(() => {
-         console.log(data)
-         if(hey) {
-            hey()
-         }
+// const greek = (data,hey) => {
+//       setTimeout(() => {
+//          console.log(data)
+//          if(hey) {
+//             hey()
+//          }
          
-      },3000)
-}
+//       },3000)
+// }
 
-greek("Hello",() => {
-   greek("World",() => {
-      greek("Entities",() => {
-         greek("Atribute",() => {
-            greek("Amit")
-         })
-      })
-   })
-})
+// greek("Hello",() => {
+//    greek("World",() => {
+//       greek("Entities",() => {
+//          greek("Atribute",() => {
+//             greek("Amit")
+//          })
+//       })
+//    })
+// })
 
-//method 2
+// //method 2
 
-const func1  = () => {
-   return new Promise((resolve,reject) => {
-      setTimeout(() => {
-         resolve("Amit")
-      })
-   })
-}
+// const func1  = () => {
+//    return new Promise((resolve,reject) => {
+//       setTimeout(() => {
+//          resolve("Amit")
+//       })
+//    })
+// }
 
-const func2  = () => {
-   return new Promise((resolve,reject) => {
-      setTimeout(() => {
-         resolve("Amit")
-      })
-   })
-}
+// const func2  = () => {
+//    return new Promise((resolve,reject) => {
+//       setTimeout(() => {
+//          resolve("Amit")
+//       })
+//    })
+// }
 
-const func3  = () => {
-   return new Promise((resolve,reject) => {
-      setTimeout(() => {
-         resolve("Amit")
-      })
-   })
-}
+// const func3  = () => {
+//    return new Promise((resolve,reject) => {
+//       setTimeout(() => {
+//          resolve("Amit")
+//       })
+//    })
+// }
 
-func1().then((res) => {
-console.log(res)
-func2().then((res)=> {
-   console.log(res)
-   func3().then((res) => {
-      console.log(res);
-   })
-})
+// func1().then((res) => {
+// console.log(res)
+// func2().then((res)=> {
+//    console.log(res)
+//    func3().then((res) => {
+//       console.log(res);
+//    })
+// })
 
-}).catch((e) => {
-   console.log(e);
+// }).catch((e) => {
+//    console.log(e);
    
-})
+// })
 
+const list = document.querySelector(".list")
+
+list.addEventListener('click',(e) =>{
+      if(e.target.tagName === 'LI'){
+         console.log('click item : ',e.target.innerText);
+         
+      }
+})

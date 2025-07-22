@@ -1,0 +1,29 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+h1{
+    text-align: center;
+}
+
+.list{
+    margin-left: 500px;
+    margin-top: 30px;
+    height: 150px;
+    width: 150px;
+    background-color: plum;
+    display: flex;
+    flex-direction: column;
+    gap: 3px;
+    justify-items: center;
+    align-items: center;
+}
+.list1{
+    height: 30px;
+    width: 70px;
+    background-color: red;
+    list-style: none;
+    text-align: center;
+
+}
