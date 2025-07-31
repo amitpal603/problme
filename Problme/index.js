@@ -471,12 +471,28 @@
 //    console.log(e);
    
 // })
+// let a =9
+// const list = document.querySelector(".list")
 
-const list = document.querySelector(".list")
-
-list.addEventListener('click',(e) =>{
-      if(e.target.tagName === 'LI'){
-         console.log('click item : ',e.target.innerText);
+// list.addEventListener('click',(e) =>{
+//       if(e.target.tagName === 'LI'){
+//          console.log(`click item :  ${e.target.innerText} ${a}`);
          
-      }
-})
+//       }
+// })
+
+// object and distrucring 
+
+const user = {
+      userName: "Amit pal",
+      isLogin : true,
+      email: "ap0498@gamil.com",
+      pass  : 3245325
+}
+
+// console.log(user);
+// const {userName,isLogin,email,pass} = user
+// console.log(userName);
+
+
+
